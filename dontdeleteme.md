@@ -32,4 +32,3 @@ Me, Myself and I
 ## Questions
 
 ericg206@outlook.com
-    

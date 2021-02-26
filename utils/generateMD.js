@@ -1,67 +1,79 @@
 const generateMarkdown = (data) => {
+    
+    const generateProjectTitle = (projectTitle) => {
+        return `# ${projectTitle}`;
+    };
+    
+    const generateProjectDescription = (description) => {
+        return description;
+    };
+    
+    const tableOfContents = () => {
+        return `* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributers](#contributers)
+* [Questions](#questions)
+        `;
+    };
+    
+    const generateProjectInstallation = (install) => {
+        return install;
+    };
+
+    const generateProjectUsage = (usage) => {
+        return usage;
+    };
+    
+    const generateProjectLicense = (license) => {
+        if(license === 'MIT') {
+            return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+        }else if(license === 'GNU GPLv3') {
+            return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+        }
+        
+        return license
+    };
+    
+    const generateProjectContributers = (contributers) => {
+        return contributers;
+    };
+    
+    const generateProjectQuestions = (question) => {
+        return question;
+    };
+    
     return `${generateProjectTitle(data.projectTitle)}
     
-    ## Description
+## Description
 
-    ${generateProjectDescription(data.description)}
+${generateProjectDescription(data.description)}
 
-    ## Table of Contents
+## Table of Contents
 
-    ${tableOfContents()}
+${tableOfContents()}
 
-    ## Installation
+## Installation
 
-    ${generateProjectInstallation(data.installation)}
+${generateProjectInstallation(data.installation)}
 
-    ## Usage
+## Usage
 
-    ${generateProjectUsage(data.usage)}
+${generateProjectUsage(data.usage)}
 
-    ## License
+## License
 
-    ${generateProjectLicense(data.license)}
+${generateProjectLicense(data.license)}
 
-    ## Contributing
+## Contributing
 
-    ${generateProjectContributers(data.contributers)}
+${generateProjectContributers(data.contributers)}
 
-    ## Questions
+## Questions
 
-    ${generateProjectQuestions(data.questions)}
+${generateProjectQuestions(data.questions)}
     `;
+
 };
 
-const generateProjectTitle = (projectTitle) => {
-    return `# ${projectTitle}`;
-};
-
-const generateProjectDescription = (description) => {
-    return description;
-};
-
-const tableOfContents = () => {
-    return `* [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributers](#contributers)
-    * [Questions](#questions)
-    `;
-};
-
-const generateProjectInstallation = (install) => {
-    return install
-};
-
-const generateProjectLicense = (license) => {
-    return `Fucking do something i'll figure out later`
-};
-
-const generateProjectContributers = (contributers) => {
-    return contributers
-};
-
-const generateProjectQuestions = (question) => {
-    return question
-};
-
-module.exports = generateMarkdown();
+module.exports = generateMarkdown;
