@@ -44,7 +44,7 @@ let questions = [
 const writeReadME = (response) => {
     let markdown = markDownTown(response);
 
-    fs.writeFile('readME.md', markdown, error => {
+    fs.writeFile('README.md', markdown, error => {
         if(error) console.log(error)
         else console.log('Success!');
     })
