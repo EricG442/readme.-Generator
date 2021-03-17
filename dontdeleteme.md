@@ -1,8 +1,8 @@
-# readme.md Generator
+# README Generator
     
 ## Description
 
-Uses javascript and a couple of packages to auto generate a readme markdown file using user inputs
+a simple README generator that uses node and creates a README markdown file for your project
 
 ## Table of Contents
 
@@ -15,19 +15,19 @@ Uses javascript and a couple of packages to auto generate a readme markdown file
 
 ## Installation
 
-just use npm i after cloning the repository
+Clone the repository and then run npm i in your console
 
 ## Usage
 
-After installing the required packages from npm just run node index.js in your console
+Run npm start after installation then enter your answers in the console after all answers are provided a markdown file will be made
 
 ## License
 
-Fucking do something i'll figure out later
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
-Me, Myself and I
+Myself
 
 ## Questions
 
